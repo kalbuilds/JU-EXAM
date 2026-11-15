@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+   outline: 1px solid red;
+}
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f9f8f6;
+}
+
+header {
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.greeting {
+  color: #666666;
+  margin: 0 0 5px;
+}
+
+header h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+}
