@@ -1,10 +1,14 @@
 import './App.css'
+import Header from './pages/Header'
 
 function App() {
 
   return (
     <>
-      Hello ju exam
+      <Header />
+      <main>
+        <p>Welcome to the JU Exam app!</p>
+      </main>
     </>
   )
 }
