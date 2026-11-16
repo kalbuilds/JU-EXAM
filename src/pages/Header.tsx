@@ -1,6 +1,6 @@
 
 import "./Header.css";
-import { Bell, Search, X } from "lucide-react";
+import { Bell, Search } from "lucide-react";
 
 function Header() {
     return (
@@ -13,7 +13,6 @@ function Header() {
             <div className="header-icons">
                 <Bell size={20} />
                 <Search size={20} />
-                <X size={20} />
             </div>
         </header>
 
