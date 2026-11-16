@@ -1,5 +1,8 @@
 import './App.css'
 import Header from './pages/Header'
+import SearchBar from './pages/SearchBar'
+import MenuBar from './pages/MenuBar'
+import Home from './pages/Home'
 
 function App() {
 
@@ -7,8 +10,11 @@ function App() {
     <>
       <Header />
       <main>
-        <p>Welcome to the JU Exam app!</p>
       </main>
+
+      <SearchBar />
+      <MenuBar />
+      <Home />
     </>
   )
 }
