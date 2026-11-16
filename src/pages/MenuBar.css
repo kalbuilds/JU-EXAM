@@ -1,0 +1,67 @@
+.menu-bar {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 85%;
+  max-width: 350px;
+  height: 55px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background: linear-gradient(120deg, #6841e8, #7545f5);
+  border-radius: 35px;
+
+  padding: 0 10px;
+  box-shadow: 0 4px 12px rgba(100, 60, 230, 0.2);
+
+  z-index: 1000;
+}
+
+.menu-bar svg {
+  width: 21px;
+  height: 21px;
+  color: #c9baff;
+  stroke-width: 2;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.menu-bar svg:hover {
+  color: white;
+  transform: translateY(-2px);
+}
+
+.menu-bar .active {
+  color: white;
+  stroke-width: 2.5;
+  position: relative;
+}
+
+.menu-bar .active::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+  .menu-bar {
+    width: 88%;
+    height: 50px;
+  }
+
+  .menu-bar svg {
+    width: 19px;
+    height: 19px;
+  }
+}
